@@ -11,8 +11,8 @@ COPY serviço_b/go.mod serviço_b/go.sum ./
 RUN go mod download
 
 # Copy the source code into the container
-COPY serviço_a/*.go ./
-COPY serviço_b/*.go ./
+COPY serviçoA/*.go ./
+COPY serviçoB/*.go ./
 
 # Build the Go app
 RUN go build -o main .
