@@ -1,0 +1,9 @@
+FROM golang:1.22.0
+
+WORKDIR /server
+
+RUN go install github.com/swaggo/swag/cmd/swag@latest
+
+RUN go install github.com/cosmtrek/air@latest
+
+CMD air

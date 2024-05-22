@@ -12,20 +12,3 @@ Este projeto consiste em dois serviços:
 2. Navegue até a pasta do projeto.
 3. Adicione sua chave da WeatherAPI no arquivo `main.go` do Serviço B.
 4. Execute o comando `docker-compose up`.
-
-## Endpoints
-
-### Serviço A
-- **POST /cep**
-  - Body: `{ "cep": "29902555" }`
-  - Respostas:
-    - `200 OK`: `{ "city": "São Paulo", "temp_C": 28.5, "temp_F": 83.3, "temp_K": 301.6 }`
-    - `422 Unprocessable Entity`: `{ "message": "invalid zipcode" }`
-
-### Serviço B
-- **POST /weather**
-  - Body: `{ "cep": "29902555" }`
-  - Respostas:
-    - `200 OK`: `{ "city": "São Paulo", "temp_C": 28.5, "temp_F": 83.3, "temp_K": 301.6 }`
-    - `422 Unprocessable Entity`: `{ "message": "invalid zipcode" }`
-    - `404 Not Found`: `{ "message": "can not find zipcode" }`

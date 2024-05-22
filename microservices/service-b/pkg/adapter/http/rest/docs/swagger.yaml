@@ -1,0 +1,58 @@
+basePath: /
+definitions:
+  entity.Weather:
+    properties:
+      city:
+        type: string
+      temp_C:
+        type: number
+      temp_F:
+        type: number
+      temp_K:
+        type: number
+    type: object
+  errorhandle.Response:
+    properties:
+      message:
+        type: string
+    type: object
+info:
+  contact:
+    email: boscardinvinicius@gmail.com
+    name: Vinícius Boscardin
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: Desafio Sistema de Temperatura por Cep Go Expert API Docs
+  version: 1.0.0
+paths:
+  /cep/{cep}:
+    get:
+      consumes:
+      - application/json
+      description: Get temperature in celcius, kelvin and fahrenheit
+      parameters:
+      - description: cep
+        in: path
+        name: cep
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/entity.Weather'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/errorhandle.Response'
+        "422":
+          description: Unprocessable Entity
+          schema:
+            $ref: '#/definitions/errorhandle.Response'
+      summary: Get temperature
+      tags:
+      - cep
+swagger: "2.0"
