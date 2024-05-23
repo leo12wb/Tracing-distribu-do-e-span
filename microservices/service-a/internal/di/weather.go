@@ -3,10 +3,10 @@ package di
 import (
 	"net/http"
 
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/internal/entity"
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/internal/infra/weatherapi"
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/internal/infra/web"
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/internal/usecase"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/entity"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/infra/weatherapi"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/infra/web"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/usecase"
 	"github.com/go-playground/validator/v10"
 )
 
