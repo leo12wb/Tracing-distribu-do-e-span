@@ -17,8 +17,6 @@ import (
 // @version 1.0.0
 // @description
 // @termsOfService
-// @contact.name Vinícius Boscardin
-// @contact.email boscardinvinicius@gmail.com
 // @license.name Apache 2.0
 // @license.url http://www.apache.org/licenses/LICENSE-2.0.html
 // @BasePath /
