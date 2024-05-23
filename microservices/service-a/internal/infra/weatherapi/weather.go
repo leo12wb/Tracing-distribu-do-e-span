@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"errors"
 
 	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/dto"
 	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/entity"
@@ -55,7 +56,8 @@ func (httpclient httpclient) Get(ctx context.Context, cep string) (*dto.WeatherO
 	defer response.Body.Close()
 
 	if response.StatusCode == 404 {
-		return nil, errorhandle.ErrNotFound
+		//return nil, errorhandle.ErrNotFound
+		return nil, errors.New("404 can not find zipcode.")
 	}
 
 	if response.StatusCode == 422 {
