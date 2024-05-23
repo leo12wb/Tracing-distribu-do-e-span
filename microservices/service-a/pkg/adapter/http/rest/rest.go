@@ -10,7 +10,7 @@ import (
 
 	httpSwagger "github.com/swaggo/http-swagger/v2"
 
-	docs "github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/pkg/adapter/http/rest/docs"
+	docs "github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/pkg/adapter/http/rest/docs"
 )
 
 // @title Desafio Sistema de Temperatura por Cep Go Expert API Docs
