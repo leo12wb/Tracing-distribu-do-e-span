@@ -4,13 +4,13 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-b/internal/di"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-b/internal/di"
 	"github.com/go-chi/chi"
 	"github.com/go-playground/validator/v10"
 
 	httpSwagger "github.com/swaggo/http-swagger/v2"
 
-	docs "github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-b/pkg/adapter/http/rest/docs"
+	docs "github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-b/pkg/adapter/http/rest/docs"
 )
 
 // @title Desafio Sistema de Temperatura por Cep Go Expert API Docs
