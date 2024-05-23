@@ -3,7 +3,7 @@ package entity_test
 import (
 	"testing"
 
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-b/internal/entity"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-b/internal/entity"
 )
 
 func TestCalculateFahrenheit(t *testing.T) {
