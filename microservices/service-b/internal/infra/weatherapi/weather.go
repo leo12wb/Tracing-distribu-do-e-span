@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-b/internal/dto"
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-b/internal/entity"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-b/internal/dto"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-b/internal/entity"
 	"github.com/spf13/viper"
 	"go.opentelemetry.io/otel"
 )
