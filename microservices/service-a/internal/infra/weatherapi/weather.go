@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/internal/dto"
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/internal/entity"
-	"github.com/booscaaa/desafio-sistema-de-temperatura-por-cep-otel-go-expert-pos/microservices/service-a/pkg/adapter/errorhandle"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/dto"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/internal/entity"
+	"github.com/leo12wb/Tracing-distribu-do-e-span/microservices/service-a/pkg/adapter/errorhandle"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"
 )
